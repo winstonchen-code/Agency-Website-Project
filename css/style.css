@@ -36,6 +36,23 @@ body {
     z-index: 10;
 }
 
+/* TOGGLE */
+
+.toggle {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background: #f60f20 url(../images/menu.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 20;
+    cursor: pointer;
+}
+
+
 h1 {
     font-size: 30px;
     font-weight: 500;
@@ -63,6 +80,8 @@ section {
     display: flex;
     height: 100vh;
 }
+
+/* NAVIGATION */
 
 .navigation {
     display: none;
