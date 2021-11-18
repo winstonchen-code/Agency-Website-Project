@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
+:root {
+    --primary-color: #f60f20;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -16,11 +20,12 @@ body {
 .btn {
     cursor: pointer;
     display: inline-block;
-    background: #f60f20;
+    background: var(--primary-color);
     color: #fff;
     text-decoration: none;
     padding: 10px 30px;
     margin: 20px 0;
+    border: 0;
 }
 
 .btn:hover {
@@ -50,6 +55,13 @@ body {
     background-position: center;
     z-index: 20;
     cursor: pointer;
+}
+
+.toggle.active {
+    background: var(--primary-color) url(../images/menu.png);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 
@@ -84,5 +96,11 @@ section {
 /* NAVIGATION */
 
 .navigation {
-    display: none;
+    position: fixed;
+    top: 0;
+    left: 100%;
+}
+
+.navigation.active {
+    left: 0;
 }
