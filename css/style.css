@@ -151,6 +151,8 @@ section {
 .services .service h2 {
     font-size: 24px;
     font-weight: 500;
+    margin-top: 20px;
+    color: #1b206e;
 }
 
 .services .service:hover {
