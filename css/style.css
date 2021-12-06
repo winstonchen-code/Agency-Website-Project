@@ -249,4 +249,12 @@ section {
         left: 40px;
         font-size: 1.5rem;
     }
+
+    section {
+        padding: 100px 40px;
+    }
+
+    .nevigation ul li a {
+        font-size: 2rem;
+    }
 }
